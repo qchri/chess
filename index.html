@@ -5,6 +5,15 @@
     <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
       integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
       crossorigin="anonymous"></script>
+
+    <script>
+      var config = {
+        draggable: true,
+        dropOffBoard: 'snapback', // this is the default
+        position: 'start'
+      }
+      var board = Chessboard('myBoard', config)
+    </script>
   </head>
 
   <div id="myBoard" style="width: 400px"></div>
